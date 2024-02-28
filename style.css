@@ -1,0 +1,130 @@
+:root {
+    --primary-color:#1E293B;
+    --text-color: #fff;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    padding: 10px 10px;    
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.display-section {
+    background-color: var(--primary-color);
+    color: var(--text-color);    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 250px;
+    padding: 15px;
+}
+
+.display-section h1 {   
+    padding-top: 100px;
+    margin-bottom: 5px;
+}
+
+.display-section input {
+    width: 40%;
+    height: 30px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.display-section button {
+    cursor: pointer;
+    padding: 3px;
+}
+.display-section button:hover {
+    background-color: #3c3636;
+    color: var(--text-color);
+}
+
+.img img{
+    
+    border-radius: 10px;
+}
+.course-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 110px 0 20px 0;
+}
+.course-section .card {    
+    background-color: #f3ececb1;
+}
+
+.card h3 {
+    padding: 10px 0;
+}
+
+.testimonial-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+.testimonial-section  .card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+.testimonial-section .card .user-info {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.testimonial-section .card .user-info img {
+    border-radius: 50%;
+    background-size: cover;
+}
+.testimonial-section .card .user-detail {
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
