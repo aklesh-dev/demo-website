@@ -74,6 +74,16 @@ nav ul {
     color: var(--text-color);
 }
 
+@media(max-width: 720px) {
+    .display-section{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+}
+
 .img img{
     
     border-radius: 10px;
